@@ -96,7 +96,7 @@ The following code would essentially do everything that I manually coded above, 
 
 I filtered down the dataset to only include the pronouns ‘his’ or ‘her’, the dependency type (so I could determine if the pronoun was a subject or object), and the corpus that the pronoun came from. I then counted the instances of each pronoun and dependency combination that appeared in the corpuses, and created the following graphic. 
 
-![Graphic 1: Gendered Pronoun usages in Dystopian Novels, split by subject or object and book](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb0b00f7-6676-4d32-966d-8eec9499b05c/04543dae-aba4-40a9-bbdc-44090347b547/Untitled.png)
+![Graphic 1: Gendered Pronoun usages in Dystopian Novels, split by subject or object and book](counts.png)
 
 Graphic 1: Gendered Pronoun usages in Dystopian Novels, split by subject or object and book
 
@@ -104,13 +104,13 @@ This graphic is very elucidating. First off, all three novels have higher uses o
 
 However, raw counts can be very misleading, as it doesn’t take into account the entire picture. Take The Handmaid’s Tale for example; only 4 times was ‘his’ used as an object and only 2 times was ‘his’ used as a subject. To account for this, I compared the rates of pronoun usages as subjects and objects compared to the overall use of the pronoun in each corpus.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb0b00f7-6676-4d32-966d-8eec9499b05c/e98c478e-26bf-4301-b9b3-c25f3beb24f8/Untitled.png)
+![Untitled](percentages.png)
 
 This helps clear things up. We can clearly see that the feminine pronouns are used at far higher rates as subjects and objects of sentences as compared with the masculine pronouns. In fact, all 3 corpuses have feminine pronouns used as objects over 10% of the total instances of the feminine pronouns, while no corpus’s masculine pronouns used as objects crack even 5%. 
 
 To determine the statistical significance of these values, I ran a Chi Squared test on the entire dataset to see if the differences between subjects and objects for his and her are statistically significant. Running a Chi Squared test, I got a value of p = 6.7e-10, which confirms that the differences that I am seeing in the rates of masculine and feminine pronouns as subjects/objects is statistically significant. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb0b00f7-6676-4d32-966d-8eec9499b05c/de4e6e6f-cebd-4760-9bf2-c81134635701/Untitled.png)
+![Untitled](chisquare.png)
 
 Moreover, delving into the chi square test’s residuals, it is clear to see that the use of ‘his’ as an object is much higher than the expected frequency, while the use of ‘her’ as an object is much lower than the expected frequency. 
 
